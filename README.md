@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +67,6 @@
             ingin belajar membuat website yang menarik.
         </p>
 
-        <a href="#" class="btn">Mulai Jelajahi</a>
     </div>
 
 </body>

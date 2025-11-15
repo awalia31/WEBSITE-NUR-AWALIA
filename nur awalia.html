@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Nur Awalia</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #a064ff, #add8e6);
+    }
+    header {
+      background-color: #c3b1e1;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      text-shadow: 2px 2px #8a2be2;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #9370db;
+      flex-wrap: wrap;
+    }
+    nav button {
+      background-color: #d8efff;
+      border: none;
+      padding: 12px 20px;
+      margin: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    nav button:hover {
+      background-color: #b0e0e6;
+      color: #4b0082;
+    }
+    .content {
+      display: none;
+      padding: 20px;
+      background-color: #f8f8ff;
+      min-height: 200px;
+    }
+    .active {
+      display: block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #e6e6fa;
+    }
+    table, th, td {
+      border: 2px solid #dda0dd;
+      padding: 10px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
+    .social-icons img {
+      width: 60px;
+      margin: 10px;
+      transition: transform 0.2s;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+    form input, form button, form select {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+    ul {
+      list-style-type: square;
+    }
+    .login-form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-form label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+    .login-form button {
+      background-color: #a064ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .login-form button:hover {
+      background-color: #8a2be2;
+    }
+    .alt-text {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .alt-text a {
+      color: #a064ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>Web Nur Awalia</header>
+  <nav>
+    <button onclick="showContent('beranda')">Beranda</button>
+    <button onclick="showContent('deskripsi')">Deskripsi</button>
+    <button onclick="showContent('konten')">Konten</button>
+    <button onclick="showContent('tutorial')">Tutorial</button>
+    <button onclick="showContent('media')">Media Sosial</button>
+    <button onclick="showContent('callcenter')">Call Center</button>
+    <button onclick="showContent('login')">Login</button>
+  </nav>
+
+  <!-- BERANDA -->
+  <div id="beranda" class="content active">
+    <h2>Selamat Datang di konten Nur Awalia!</h2>
+    <p style="font-size: 18px;">Tempat semua tutorial kue menjadi lebih enak dan yummy 🍰</p>
+    <img src="C:\Users\demma\Downloads\WhatsApp Image 2025-10-21 at 09.36.19.jpeg" alt="brownies lezat" style="max-width: 100%; height: auto; border-radius: 20px;">
+  </div>
+
+  <!-- DESKRIPSI -->
+  <div id="deskripsi" class="content">
+    <h2>📋 Deskripsi Diri</h2>
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Umur</th>
+        <th>Hobi</th>
+      </tr>
+      <tr>
+        <td>Nur Awalia</td>
+        <td>XII 3.2</td>
+        <td>17 Tahun</td>
+        <td>Jogging</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- KONTEN -->
+  <div id="konten" class="content">
+    <h2>📹 Video Tutorial</h2>
+    <iframe src="https://www.youtube.com/embed/R7uA4PJmQuo" title="YouTube video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <!-- TUTORIAL -->
+  <div id="tutorial" class="content">
+    <h2>🍩 Tutorial Membuat Kue Enak</h2>
+    <ol>
+      <li>Siapkan bahan-bahan: tepung, gula, telur</li>
+      <li>Campurkan dan aduk hingga merata</li>
+      <li>Panggang dalam oven selama 30 menit</li>
+    </ol>
+    <ul>
+      <li>Tips: Gunakan tepung yang lembut</li>
+      <li>Jangan lupa topping lucu!</li>
+      <li>Gunakan bahan berkualitas</li>
+    </ul>
+  </div>
+
+  <!-- MEDIA SOSIAL -->
+  <div id="media" class="content">
+    <h2>📱 Temukan Aku di Media Sosial!</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/awwi008" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      </a>
+      <a href="https://www.youtube.com/@nurawalia6590" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+      </a>
+      <a href="https://www.tiktok.com/@wall312008" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
+    </div>
+  </div>
+
+  <!-- CALL CENTER -->
+  <div id="callcenter" class="content">
+    <h2>📞 Call Center</h2>
+    <form onsubmit="handleCallCenterSubmit(event)">
+      <label>Masukkan URL Website:</label>
+      <input type="url" required>
+      <label>Tanggal Kunjungan:</label>
+      <input type="date" required>
+      <label>Jumlah Pengunjung:</label>
+      <input type="number" placeholder="Contoh: 100" required>
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <!-- LOGIN -->
+  <div id="login" class="content">
+    <h2>🔒 Login</h2>
+    <form class="login-form" onsubmit="handleLogin(event)">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Masuk</button>
+    </form>
+    <p class="alt-text">Jika belum memiliki akun, <a href="#" onclick="showForm('daftar')">daftar di sini</a></p>
+  </div>
+
+  <!-- DAFTAR -->
+  <div id="daftar" class="content">
+    <h2>📝 Daftar Akun Baru</h2>
+    <form class="login-form" onsubmit="handleRegister(event)">
+      <label for="registerUsername">Username:</label>
+      <input type="text" id="registerUsername" required>
+
+      <label for="registerEmail">Email:</label>
+      <input type="email" id="registerEmail" required>
+
+      <label for="registerJenisKelamin">Jenis Kelamin:</label>
+      <select id="registerJenisKelamin" required>
+        <option value="">Pilih</option>
+        <option value="pria">Pria</option>
+        <option value="wanita">Wanita</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+      <label for="registerPassword">Password:</label>
+      <input type="password" id="registerPassword" required>
+
+      <button type="submit">Daftar</button>
+    </form>
+  </div>
+
+  <script>
+    function showContent(id) {
+      document.querySelectorAll('.content').forEach(div => {
+        div.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+
+    function showForm(formId) {
+      showContent(formId);
+    }
+
+    function handleLogin(event) {
+      event.preventDefault();
+      alert('Fitur Login belum tersedia :)');
+    }
+
+    function handleRegister(event) {
+      event.preventDefault();
+      alert('Akun berhasil dibuat! :)');
+    }
+
+    function handleCallCenterSubmit(event) {
+      event.preventDefault();
+      alert('Terima kasih sudah mengisi! ');
+    }
+  </script>
+</body>
+</html>
